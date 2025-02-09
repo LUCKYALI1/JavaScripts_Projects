@@ -1,7 +1,6 @@
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
-
 // Unsplash API
 const count = 10;
 const apiKey = '3L3AHAqlWbxUaUoPYf6GhkSCwzg_3vaKOEfx-9uAk0c';
@@ -59,11 +58,11 @@ function displayPhotos() {
 // Get photos from Unsplash API
 async function getPhotos() {
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiURL);  // Fixed the typo here (apiUrl → apiURL)
     photosArray = await response.json();
     displayPhotos();
   } catch (error) {
-    // Catch Error Here
+    console.error("Error fetching data from Unsplash API", error);  // Added error handling for debugging
   }
 }
 
