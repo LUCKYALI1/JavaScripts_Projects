@@ -13,6 +13,8 @@ The selected media stream is assigned to the video element.
 Clicking the button triggers Picture-in-Picture mode.
 
 ## 📜 Code Implementation
+
+ ```bash
 const videoElement = document.getElementById('video');
 const button = document.getElementById('button');
 
@@ -52,3 +54,5 @@ A modern browser that supports navigator.mediaDevices.getDisplayMedia() and requ
 
 ## 📜 License
 This project is open-source and available under the MIT License.
+
+
