@@ -1,0 +1,34 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:  rgb(37, 37, 37);
+}
+.button-container{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:  inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+#button{
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    background: white;
+    color:black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+#button:hover{
+    background: red;
+}
+#button:active{
+    transform:  translateY(3px);
+}
