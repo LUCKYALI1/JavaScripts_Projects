@@ -13,8 +13,7 @@ The selected media stream is assigned to the video element.
 Clicking the button triggers Picture-in-Picture mode.
 
 ## 📜 Code Implementation
-
- ```bash
+```bash
 const videoElement = document.getElementById('video');
 const button = document.getElementById('button');
 
@@ -41,7 +40,7 @@ button.addEventListener('click', async () =&gt; {
 
 // Start media stream on page load
 selectMediaStream();
-
+```
 ## 🚀 Usage
 
 Open the index.html file in a browser.
