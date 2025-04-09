@@ -1,0 +1,104 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #153677 , #4e0854);
+   
+}
+.todo-app{
+    width:100%;
+    max-width: 550px;
+    background-color: #fff;
+    padding:  40px  30px 70px;
+    margin: 0px auto;
+}
+.todo-app h2{
+    color: #002765;
+    display: inline;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    letter-spacing: -2px;
+
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffe6a3;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline:  none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:  40px ;
+}
+ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+}
+ul li::before{
+    content: " ";
+    position: absolute;
+    height: 23px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/rectangle.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+  width: 25px;
+    background-image: url(img/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+
+}
+ul li span:hover{
+    background: #edeef0;
+}
